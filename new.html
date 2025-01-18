@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulting Numbers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #1f1f2e;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .numbers-section {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .number {
+      font-size: 48px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .label {
+      font-size: 18px;
+      color: #bbbbbb;
+    }
+
+    .number-box {
+      margin: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Numbers Section -->
+  <section class="numbers-section" id="numbers">
+    <div class="container">
+      <h2 class="mb-4">Pyramid Consulting by the Numbers</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-2 col-sm-4 col-6 number-box">
+          <div class="number" data-target="3">0</div>
+          <div class="label">Decades</div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6 number-box">
+          <div class="number" data-target="125">0</div>
+          <div class="label">Fortune 500 Clients</div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6 number-box">
+          <div class="number" data-target="5">0</div>
+          <div class="label">Continents</div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6 number-box">
+          <div class="number" data-target="25">0</div>
+          <div class="label">Countries</div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6 number-box">
+          <div class="number" data-target="6500">0</div>
+          <div class="label">Consultants</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Counter Animation Function
+    const counters = document.querySelectorAll('.number');
+
+    const animateNumbers = () => {
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText;
+          const increment = Math.ceil(target / 100); // Adjust speed here
+          if (count < target) {
+            counter.innerText = count + increment;
+            setTimeout(updateCount, 10); // Adjust smoothness here
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+      });
+    };
+
+    // Intersection Observer to trigger animation when section is in view
+    const numbersSection = document.querySelector('#numbers');
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateNumbers(); // Trigger animation
+            observer.unobserve(numbersSection); // Stop observing after animation
+          }
+        });
+      },
+      {
+        threshold: 0.5 // Trigger when 50% of the section is visible
+      }
+    );
+
+    observer.observe(numbersSection);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

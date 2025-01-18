@@ -4,16 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Landing Page</title>
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <title>SS Talent</title>
+  <link rel="icon" type="image/png" href="images/Favicon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -23,8 +28,8 @@
   <!-- navbar section -->
   <header class="header_wrapper">
     <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home" style="margin-left: 90px;">
           <h5 class="logo">SS Talent</h5>
         </a>
 
@@ -39,19 +44,19 @@
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Clients">Clients</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#Services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Teams">Teams</a>
+              <a class="nav-link" href="#client">Clients</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Company">Company</a>
+              <a class="nav-link" href="#company">Company</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#Talent">Talent</a>
+            </li>
+            <li class="nav-item bg-design">
+              <a class="nav-link" href="#Contact" style="color: #462B34;">Contact</a>
             </li>
           </ul>
         </div>
@@ -61,7 +66,7 @@
 
   <!-- Banner section -->
   <section id="home" class="banner_wrapper">
-    <div class="container main-head">
+    <div class="container main-head" data-aos="fade-up">
       <div class="row">
         <div class="col lg-7 order-lg-1 order-2 banner-content">
           <p class="text-uppercase position-relative mb-1" style="    color: red;
@@ -72,79 +77,79 @@
             Staffing Solutions</h1>
           <div class="mt-3">
             <a class="main-btn primary-btn" href="#">Learn More
-              <img src="images\right-arrow.png" class="arrow"/>
+              <img src="images\right-arrow.png" class="arrow" />
             </a>
           </div>
         </div>
-        
+
       </div>
-      </div>
+    </div>
   </section>
 
   <!--   Services  -->
   <section id="Services" class="service_wrapper">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 text-center design " ></div>
-        <div  class="col-sm-12 text-center ">
+        <div class="col-sm-12 text-center design "></div>
+        <div class="col-sm-12 text-center ">
           <h2 class="section-title">Our Services</h2>
-      </div>
-      <div class="col-lg-2 col-sm-6 mb-4">
+        </div>
+        <div class="col-lg-2 col-sm-6 mb-4">
           <div class="card rounded-0 border-0 text-center pt-3 pb-3 px-3">
-              <div class="img-box">
-                  <img decoding="async" class="service_img" src="images\output-onlinepngtools.png">
-              </div>
-              <h5 class="text-uppercase mt-4 mb-3">Staff Augmentation</h5>
+            <div class="img-box" data-aos="flip-right">
+              <img decoding="async" class="service_img" src="images\output-onlinepngtools.png">
+            </div>
+            <h5 class="text-uppercase mt-4 mb-3" data-aos="fade-up">Staff Augmentation</h5>
           </div>
-      </div>
-      <div class="col-lg-2 col-sm-6 mb-4">
+        </div>
+        <div class="col-lg-2 col-sm-6 mb-4">
           <div class="card rounded-0 border-0 text-center pt-3 pb-3 px-3">
-            <div class="img-box">
+            <div class="img-box" data-aos="flip-right">
               <img decoding="async" class="service_img" src="images\output-onlinepngtools (1) 1.png">
+            </div>
+            <h5 class="text-uppercase mt-4 mb-3" data-aos="fade-up">Direct Hire</h5>
           </div>
-              <h5 class="text-uppercase mt-4 mb-3">Direct Hire</h5>
-          </div>
-      </div>
-      <div class="col-lg-2 col-sm-6 mb-4">
+        </div>
+        <div class="col-lg-2 col-sm-6 mb-4">
           <div class="card rounded-0 border-0 text-center pt-3 pb-3 px-3">
-            <div class="img-box">
+            <div class="img-box" data-aos="flip-right">
               <img decoding="async" class="service_img" src="images\output-onlinepngtools (3) 1.png">
+            </div>
+            <h5 class="text-uppercase mt-4 mb-3" data-aos="fade-up">ROC</h5>
           </div>
-              <h5 class="text-uppercase mt-4 mb-3">ROC</h5>
-          </div>
-      </div>
-      <div class="col-lg-2 col-sm-6 mb-4">
+        </div>
+        <div class="col-lg-2 col-sm-6 mb-4">
           <div class="card rounded-0 border-0 text-center pt-3 pb-3 px-3">
-            <div class="img-box">
+            <div class="img-box" data-aos="flip-right">
               <img decoding="async" class="service_img" src="images\output-onlinepngtools (4) 1.png">
+            </div>
+            <h5 class="text-uppercase mt-4 mb-3" data-aos="fade-up">Web/Mobile</h5>
           </div>
-              <h5 class="text-uppercase mt-4 mb-3">Web/Mobile</h5>
+        </div>
+        <div class="col-lg-2 col-sm-6 mb-4">
+          <div class="card rounded-0 border-0 text-center pt-3 pb-3 px-3">
+            <div class="img-box" data-aos="flip-right">
+              <img decoding="async" class="service_img" src="images\web-design (1) 1.png">
+            </div>
+            <h5 class="text-uppercase mt-4 mb-3" data-aos="fade-up">UI/UX</h5>
           </div>
-      </div>
-      <div class="col-lg-2 col-sm-6 mb-4">
-        <div class="card rounded-0 border-0 text-center pt-3 pb-3 px-3">
-          <div class="img-box">
-            <img decoding="async" class="service_img" src="images\web-design (1) 1.png">
         </div>
-            <h5 class="text-uppercase mt-4 mb-3">UI/UX</h5>
+        <div class="col-lg-2 col-sm-6 mb-4">
+          <div class="card rounded-0 border-0 text-center pt-3 pb-3 px-3">
+            <div class="img-box" data-aos="flip-right">
+              <img decoding="async" class="service_img" src="images\server 1.png">
+            </div>
+            <h5 class="text-uppercase mt-4 mb-3" data-aos="fade-up">Database Management</h5>
+          </div>
         </div>
-    </div>
-    <div class="col-lg-2 col-sm-6 mb-4">
-      <div class="card rounded-0 border-0 text-center pt-3 pb-3 px-3">
-        <div class="img-box">
-          <img decoding="async" class="service_img" src="images\server 1.png">
-      </div>
-          <h5 class="text-uppercase mt-4 mb-3">Database Management</h5>
-      </div>
-  </div>
-  <div class="col-sm-12 text-center">
-    <p class="service-para">At SS Talent, we deliver tailored solutions to help businesses succeed. From expanding<br
-            class="d-none d-lg-block">
+        <div class="col-sm-12 text-center" data-aos="fade-up">
+          <p class="service-para">At SS Talent, we deliver tailored solutions to help businesses succeed. From
+            expanding<br class="d-none d-lg-block">
             your team and streamlining hiring to developing cutting-edge applications and managing<br
-            class="d-none d-lg-block">data, we provide the expertise you need to thrive.</p>
-</div>
-  </div>
+              class="d-none d-lg-block">data, we provide the expertise you need to thrive.</p>
+        </div>
       </div>
+    </div>
     </div>
 
   </section>
@@ -154,342 +159,309 @@
   <section id="client" class="client_wrapper">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 text-center design " ></div>
-        <div  class="col-sm-12 text-center ">
+        <div class="col-sm-12 text-center design "></div>
+        <div class="col-sm-12 text-center ">
           <h2 class="section-title">Clients</h2>
-      </div>
-  </div>
-  <div class="row justify-content-center pt-5">
-    <div class="col-lg-6 mb-4 mb-lg-0">
-      <div class="row">
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="single-logo-item">
-            <img src="images/client-img/logo1.webp" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="single-logo-item">
-            <img src="images/client-img/logo2.webp" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="single-logo-item">
-            <img src="images/client-img/logo3.webp" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="single-logo-item">
-            <img src="images/client-img/logo4.webp" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="single-logo-item">
-            <img src="images/client-img/logo5.webp" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="single-logo-item">
-            <img src="images/client-img/logo6.webp" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="single-logo-item">
-            <img src="images/client-img/logo7.webp" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="single-logo-item">
-            <img src="images/client-img/logo8.webp" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="single-logo-item">
-            <img src="images/client-img/logo9.webp" class="img-fluid">
-          </div>
         </div>
       </div>
-  </div>
-  <div class="offset-lg-2 col-lg-4 col-md-10">
-    <div class="client-info">
-      <div class="d-flex">
-        <span class="large">10</span>
-        <span class="small">Years<br>Experience<br>Wroking</span>
-      </div>
-      <div class="call-now d-flex py-4">
-        <div>
-          <span class="fa fa-phone-alt"></span>
+      <div class="row justify-content-center pt-5">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="single-logo-item" data-aos="zoom-in-down">
+                <img src="images/client8.webp" class="img-fluid logo-img">
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="single-logo-item" data-aos="zoom-in-down">
+                <img src="images/client2.png" class="img-fluid logo-img">
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="single-logo-item" data-aos="zoom-in-down">
+                <img src="images/cleint3.webp" class="img-fluid logo-img">
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="single-logo-item" data-aos="zoom-in-down">
+                <img src="images/client4.jpg" class="img-fluid logo-img">
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="single-logo-item" data-aos="zoom-in-down">
+                <img src="images/client6.png" class="img-fluid logo-img">
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="single-logo-item" data-aos="zoom-in-down">
+                <img src="images/client7.png" class="img-fluid logo-img">
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="single-logo-item" data-aos="zoom-in-down">
+                <img src="images/client5.png" class="img-fluid logo-img">
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="single-logo-item" data-aos="zoom-in-down">
+                <img src="images/client6.png" class="img-fluid logo-img">
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="single-logo-item" data-aos="zoom-in-down">
+                <img src="images/client5.png" class="img-fluid logo-img">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="ms-4">
-          <p>Call us Now</p>
-          <h5>+91 8448608230</h5>
+
+        <div class="offset-lg-2 col-lg-4 col-md-10">
+          <div class="client-info">
+            <div class="d-flex" data-aos="fade-left">
+              <span class="large">10</span>
+              <span class="small">Years<br>Experience<br>Wroking</span>
+            </div>
+            <div class="call-now d-flex py-4">
+              <div data-aos="fade-left">
+                <span class="fa fa-phone-alt"></span>
+              </div>
+              <div class="ms-4" data-aos="fade-left">
+                <p>Call us Now</p>
+                <h5>+1 508.542.0611</h5>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-  </div>
-      </div>
+    </div>
     </div>
 
   </section>
   <!-- About -->
-  <section id="about" class="about_wrapper">
+  <section id="company" class="about_wrapper">
     <div class="container">
       <div class="row align-item-center">
-        <div class="col-lg-7 mb-4 mb-lg-0 about-img">
+        <div class="col-sm-12 text-center ">
+          <h2 class="section-title">Company</h2>
+        </div>
+        <div class="col-lg-7 mb-4 mb-lg-0 about-img" data-aos="fade-right">
           <img src="images/Asset 2.png" class="img-fluid" style="width: 600px;" alt="about">
         </div>
-        <div class="col-lg-5 mb-2 mb-lg-0">
+        <div class="col-lg-5 mb-2 mb-lg-0" data-aos="fade-left">
           <h2>About US</h2>
           <h4>Our Mission</h4>
-          <p>Working at the crossroads of people and transformative technologies, SS Talent delivers creative business solutions — powered by top talent — to match your strategic goals, helping you to succeed now and in the future
+          <p>At Simple Solution Talent, we deliver cost-effective IT Staffing and Augmentation, addressing workforce
+            needs, fostering growth, ensuring delivery, and building lasting partnerships.
           </p>
           <h4>
             Our Vision
           </h4>
-          <p> At SS Talent, we are united by a collective vision: to provide the best business technology consulting, talent, and learning solutions to enterprises around the world.</p>
+          <p> Our vision is to be a global leader in IT staffing, bridging the gap between top talent and businesses to
+            drive excellence and sustainable growth.</p>
           <h4>
             Our Core Values
           </h4>
-          <p>In support of our vision, we adhere to a set of core values that help to shape Judge’s corporate culture, drive business decisions, and define how we partner with clients, employees, and contractors.</p>
-         
+          <p> At Simple Solution Talent, we value integrity, prioritize client satisfaction, strive for excellence,
+            embrace innovation, and foster collaboration to achieve collective success.</p>
+
         </div>
       </div>
- 
-  </section>
- 
-<!--Talent-->
 
-<section id="Services" class="service_wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 text-center design " ></div>
-      <div  class="col-sm-12 text-center ">
-        <h2 class="section-title">Talent</h2>
-    </div>
-    <div class="col-lg-4 col-sm-6 mb-4">
-      <div class="card rounded-0 border-0 text-center talent-box py-5 px-3">
-          <div class="card-img">
+  </section>
+
+  <!--Talent-->
+
+  <section id="Talent" class="service_wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center design "></div>
+        <div class="col-sm-12 text-center ">
+          <h2 class="section-title">Talent</h2>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-out-down">
+          <div class="card rounded-0 border-0 text-center talent-box py-5 px-3">
+            <div class="card-img">
               <img decoding="async" class="card-img" src="./images/ExecutiveSearch-1024x439.jpg">
+            </div>
+            <h5 class="text-uppercase mt-4 mb-3">Executive Search</h5>
+            <p>As a leading executive search agency, Judge understands the challenges of finding top-tier senior-level
+              managers and executives. We work closely with your organization to define the ideal candidate profile,
+              ensuring we provide you with the best talent to drive success and meet your strategic goals.</p>
+            <a href="#" class="main-btn primary-btn mt-4">Learn More</a>
           </div>
-          <h5 class="text-uppercase mt-4 mb-3">Executive Search</h5>
-          <p>As a leading executive search agency, Judge understands the challenges of finding top-tier senior-level managers and executives. We work closely with your organization to define the ideal candidate profile, ensuring we provide you with the best talent to drive success and meet your strategic goals.</p>
-          <a href="#" class="main-btn primary-btn mt-4">Learn More</a>
-      </div>
-  </div>
-  <div class="col-lg-4 col-sm-6 mb-4">
-    <div class="card rounded-0 border-0 text-center talent-box py-5 px-3">
-        <div class="card-img">
-            <img decoding="async" class="card-img" src="./images/Healthcare-1024x439.jpg">
         </div>
-        <h5 class="text-uppercase mt-4 mb-3">Healthcare Staffing</h5>
-        <p>We provide staffing solutions across the healthcare sector, covering specialized roles like vaccination teams, on-site medical testers, travel nurses, allied healthcare professionals, locum tenens, and other essential positions to meet the diverse needs of healthcare organizations.</p>
-        <a href="#" class="main-btn primary-btn mt-4">Learn More</a>
-    </div>
-</div>
-<div class="col-lg-4 col-sm-6 mb-4">
-  <div class="card rounded-0 border-0 text-center talent-box py-5 px-3">
-      <div class="card-img">
-          <img decoding="async" class="card-img" src="./images/ITStaffing-1024x439.jpg">
+        <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-out-down">
+          <div class="card rounded-0 border-0 text-center talent-box py-5 px-3">
+            <div class="card-img">
+              <img decoding="async" class="card-img" src="./images/Healthcare-1024x439.jpg">
+            </div>
+            <h5 class="text-uppercase mt-4 mb-3">Healthcare Staffing</h5>
+            <p>We provide staffing solutions across the healthcare sector, covering specialized roles like vaccination
+              teams, on-site medical testers, travel nurses, allied healthcare professionals, locum tenens, and other
+              essential positions to meet the diverse needs of healthcare organizations.</p>
+            <a href="#" class="main-btn primary-btn mt-4">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-out-down">
+          <div class="card rounded-0 border-0 text-center talent-box py-5 px-3">
+            <div class="card-img">
+              <img decoding="async" class="card-img" src="./images/ITStaffing-1024x439.jpg">
+            </div>
+            <h5 class="text-uppercase mt-4 mb-3">IT Staffing</h5>
+            <p>We provide IT staffing solutions for Fortune 100 companies, offering skilled professionals proficient in
+              emerging technologies like artificial intelligence (AI) and machine learning (ML), as well as expertise in
+              in-demand programming languages such as Java and Python, meeting diverse staffing needs across industries.
+            </p>
+            <a href="#" class="main-btn primary-btn mt-4">Learn More</a>
+          </div>
+        </div>
       </div>
-      <h5 class="text-uppercase mt-4 mb-3">IT Staffing</h5>
-      <p>We provide IT staffing solutions for Fortune 100 companies, offering skilled professionals proficient in emerging technologies like artificial intelligence (AI) and machine learning (ML), as well as expertise in in-demand programming languages such as Java and Python, meeting diverse staffing needs across industries.</p>
-      <a href="#" class="main-btn primary-btn mt-4">Learn More</a>
-  </div>
-</div>
-</div>
     </div>
-  </div>
+    </div>
 
-</section>
+  </section>
 
-
-<!-- 
-
-  <section id="Portfolio" class="portfolio_wrapper">
+  <!--
+Numbers
+-->
+  <section class="numbers-section" id="numbers">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12 text-left mb-md-5 mb-2">
-          <h2>QUALITY WORK <br>RECENTLY DONE PROJECT</h2>
-        <span>(Dummy Area)</span>
-      </div>
-      </div>
-      <div class="row ">
-        <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="pills-one-tab" data-bs-toggle="pill"
-                  data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one"
-                  aria-selected="true">Popular</button>
-          </li>
-          <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-two-tab" data-bs-toggle="pill" data-bs-target="#pills-two"
-                  type="button" role="tab" aria-controls="pills-two" aria-selected="true">Latest</button>
-          </li>
-          <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-three-tab" data-bs-toggle="pill"
-                  data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three"
-                  aria-selected="true">Upcoming</button>
-          </li>
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-one" role="tabpanel" aria-labelledby="pills-home-tab">
-          <div class="row">
-            <div class="col-lg-4 col-sm-6">
-              <div class="portfolio-img">
-                <img src="images/portfolio/portfolio1.jpg" class="img-fluid w-100">
-                <div class="overlay">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
-              <p>Animated, Portfolio</p>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-              <div class="portfolio-img">
-                <img src="images/portfolio/portfolio2.jpg" class="img-fluid w-100">
-                <div class="overlay">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
-              <p>Animated, Portfolio</p>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-              <div class="portfolio-img">
-                <img src="images/portfolio/portfolio3.jpg" class="img-fluid w-100">
-                <div class="overlay">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
-              <p>Animated, Portfolio</p>
-            </div>
-          </div>
+      <h2 class="mb-4">SS Talent by the Numbers</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-2 col-sm-4 col-6 number-box">
+          <div class="number" data-target="3">0</div>
+          <div class="label">Decades</div>
         </div>
-
-        <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-profile-tab">
-          <div class="row">
-            <div class="col-lg-4 col-sm-6">
-              <div class="portfolio-img">
-                <img src="images/portfolio/portfolio4.jpg" class="img-fluid w-100">
-                <div class="overlay">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
-              <p>Animated, Portfolio</p>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-              <div class="portfolio-img">
-                <img src="images/portfolio/portfolio5.jpg" class="img-fluid w-100">
-                <div class="overlay">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
-              <p>Animated, Portfolio</p>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-              <div class="portfolio-img">
-                <img src="images/portfolio/portfolio6.jpg" class="img-fluid w-100">
-                <div class="overlay">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
-              <p>Animated, Portfolio</p>
-            </div>
-          </div>
+        <div class="col-md-2 col-sm-4 col-6 number-box">
+          <div class="number" data-target="125">0</div>
+          <div class="label">Fortune 500 Clients</div>
         </div>
-
-        <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-contact-tab">
-          <div class="row">
-            <div class="col-lg-4 col-sm-6">
-              <div class="portfolio-img">
-                <img src="images/portfolio/portfolio7.jpg" class="img-fluid w-100">
-                <div class="overlay">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
-              <p>Animated, Portfolio</p>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-              <div class="portfolio-img">
-                <img src="images/portfolio/portfolio8.jpg" class="img-fluid w-100">
-                <div class="overlay">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
-              <p>Animated, Portfolio</p>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-              <div class="portfolio-img">
-                <img src="images/portfolio/portfolio9.jpg" class="img-fluid w-100">
-                <div class="overlay">
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-              <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
-              <p>Animated, Portfolio</p>
-            </div>
-          </div>
+        <div class="col-md-2 col-sm-4 col-6 number-box">
+          <div class="number" data-target="5">0</div>
+          <div class="label">Continents</div>
         </div>
-      </div>
-
+        <div class="col-md-2 col-sm-4 col-6 number-box">
+          <div class="number" data-target="25">0</div>
+          <div class="label">Countries</div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6 number-box">
+          <div class="number" data-target="6500">0</div>
+          <div class="label">Consultants</div>
+        </div>
       </div>
     </div>
   </section>
-  <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+  <footer id="Contact" class="footer-box text-light py-5">
     <div class="container">
       <div class="row">
-        <div class="col-12 newsletter text-center px-4">
-          <div>
-            <h3 class="text-white">get update from anywhere</h3>
-            <p class="text-white">Bearing Void gathering light light his eavening unto dont afraid.</p>
+        <!-- Logo and About Section -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold logo">SS Talent</h5>
+          <p style="color: white;">
+            Simple Solution Talent delivers cost-effective IT Staff Augmentation and Project Solutions, fostering
+            professional growth, quality staffing, and lasting client partnerships across the United States.
+          </p>
+        </div>
 
-            <form class="row g-3 justify-content-center mt-4">
-                <div class="col col-sm-6 col-lg-4">
-                    <input type="email" class="form-control" placeholder="Email address">
-                </div>
-                <div class="col col-auto">
-                    <button type="submit" class="main-btn secondary-btn border-white mb-3">Get
-                        Started</button>
-                </div>
-            </form>
+        <!-- Quick Links Section -->
+        <div class="col-md-2 mb-4 touch-box">
+          <h6 class="fw-bold">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li class="text-box"><a href="#" class="text-light text-decoration-none">Home</a></li>
+            <li class="text-box"><a href="#" class="text-light text-decoration-none">About Us</a></li>
+            <li class="text-box"><a href="#" class="text-light text-decoration-none">Our Team</a></li>
+            <li class="text-box"><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+          </ul>
         </div>
+
+        <!-- Information Section -->
+        <div class="col-md-2 mb-4 touch-box">
+          <h6 class="fw-bold">Services</h6>
+          <ul class="list-unstyled">
+            <li class="text-box"><a href="#" class="text-light text-decoration-none">IT Staffing</a></li>
+            <li class="text-box"><a href="#" class="text-light text-decoration-none">Contract IT Staffing</a></li>
+            <li class="text-box"><a href="#" class="text-light text-decoration-none">Project Based IT Staffing</a></li>
+
+            <li class="text-box"><a href="#" class="text-light text-decoration-none">IT Staff Augmentation</a></li>
+          </ul>
+        </div>
+
+        <!-- Get In Touch Section -->
+        <div class="col-md-4 mb-4 touch-box">
+          <h6 class="fw-bold">Get In Touch</h6>
+          <p style="color: white;">info@solution-s.com</p>
+          <div class="d-flex">
+            <a href="https://www.linkedin.com/company/simple-solution-s/" target="_blank" class="text-light me-3"><i
+                class="fab fa-linkedin fa-lg"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container mt-5">
-      <div class="row align-item-center justify-content-center">
-        <div class="col-12 text-center">
-          <div class="footer-logo mb-3 mb-md-0">
-            <img src="images/logo.png" class="img-fluid" alt="footer">
-          </div>
-          <div class="my-4 social-icons">
-            <h5>Follow Me</h5>
-            <ul class="list-unstyled d-flex justify-content-center align-items-center">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-8 col-sm-12">
-          <p class="footer-text text-center my-2">Copyright © 2023 All rights reserved | This template
-            is made with <i class="far fa-heart"></i> by <a href="#">Yash Bharti</a>
-        </p>
-        </div>
+      <hr class="bg-light">
+      <div class="text-center">
+        <p class="mb-0 footer-para">&copy; 2025 Simple Management Consulting Group, LLC. All Rights Reserved.</p>
       </div>
     </div>
-  </section> -->
+  </footer>
+
+
   <script src="main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Counter Animation Function
+      const counters = document.querySelectorAll('.number');
+
+      const animateNumbers = () => {
+        counters.forEach(counter => {
+          const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+
+            // Adjust speed dynamically based on the target value
+            const increment = target > 100
+              ? Math.ceil(target / 100) // Faster for larger values
+              : Math.ceil(target / 200); // Slower for smaller values
+
+            if (count < target) {
+              counter.innerText = count + increment;
+              setTimeout(updateCount, target > 100 ? 10 : 50); // Slow down updates for smaller values
+            } else {
+              counter.innerText = target;
+            }
+          };
+          updateCount();
+        });
+      };
+
+      // Intersection Observer to trigger animation when section is in view
+      const numbersSection = document.querySelector('#numbers');
+      if (numbersSection) {
+        const observer = new IntersectionObserver(
+          entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                animateNumbers(); // Trigger animation
+                observer.unobserve(numbersSection); // Stop observing after animation
+              }
+            });
+          },
+          {
+            threshold: 0.5 // Trigger when 50% of the section is visible
+          }
+        );
+
+        observer.observe(numbersSection);
+      }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
